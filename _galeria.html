@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .gallery {
+      width: 600px;
+      height: 600px;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      white-space: nowrap;
+      transition: 1.2s;
+    }
+    
+    .photo {
+      width: 580px;
+      height: 580px;
+      display: inline-block;
+      scroll-snap-align: center;
+      background-color: #f1f1f1;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="photo"></div>
+    <div class="photo"></div>
+    <div class="photo"></div>
+    <div class="photo"></div>
+    <div class="photo"></div>
+    <div class="photo"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* GALERIA */
+body{
+  font-family: 'Alkatra', cursive;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: whitesmoke;
+}
+.ct-foto{
+    width: 180px;
+    height: 230px;
+    margin: 5px;
+    border:1px solid rgb(191, 191, 191);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+.ct-card-galeria{
+    width: 100%;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.foto_antes{
+    width: 180px;
+    height: 230px;
+    border-radius:10px;
+}
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    transition: all 0.4s;
+    z-index: 1;
+  }
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .modal_content, .ft-depois{
+    width:400px;
+    height: 400px;
+  }
+  .btn-footer{
+    padding: 5px 8px;
+    border-radius:5px;
+    border:1px solid red;
+    color:black;
+    border-top-color: transparent;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  /*formulario */ 
+  .ct_form{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .ct-titulo h1{
+    text-shadow: 1px 1px 10px rgb(111, 111, 111);
+    font-size: 2rem;
+  }
+  .formulario{
+    width: 300px;
+    height: 350px;
+    border:1px solid black;
+    border-radius:10px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 2px 8px black;
+  }
+  .fild{
+    width: 300px;
+    border:none;
+    outline:none;
+    margin-top:10px;
+    display:flex;
+    flex-flow:row wrap;
+    align-items: center;
+  }
+  .div{
+   width:70px;
+  }
+  .input{
+    width:180px;
+    height: 25px;
+    outline:none;
+    height: 25px;
+  }
+  .btn{
+    width: 100%;
+    height: 30px;
+    font-weight: bold; 
+    margin-top:10px;
+  }
+  #bd_td_piza{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  .td_pizzas{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-flow:row wrap;
+    background: whitesmoke;
+    border-radius:10px;
+    box-shadow:  -14px 14px 42px #bebebe,
+                  14px -14px 42px #ffffff;
+  }
+  .ct_card{
+    width: 200px;
+    min-width: 200px;
+    max-height: 250px;
+    min-height: 250px;
+    margin: 5px;
+    border:1px solid rgb(191, 191, 191);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-flow:row nowrap;
+    overflow: hidden;
+    
+  }
+  .card_1,.card_2, .foto_card{
+    min-width: 100%;
+    height: 251px;
+    border-radius: 10px;
+  }
+  .ct-titulo-card{
+    width: 100%;
+    height: 45px;
+  }
+  .title-card{
+    height: 45px;
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
+    text-align: center;
+    text-shadow: 0 0 6px rgba(179, 178, 178, 0.74),2px 1px 9px rgba(152, 138, 130, 0.94);
+  }
+  .ct-icon, .icon{
+    width: 30px;
+    margin:5px;
+  }
+  .ct-info-td_pizza{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .info-pizza{
+    width:160px;
+    padding: 5px;
+  }
+  .button-add{
+    width:100%;
+    height: 30px;
+    background-color: green;
+    margin-top: 18px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    color:white;
+    padding-top: 5px;
+  }
+.ct_card:hover .card_2{
+  transform: translateX(-100%);
+    transition: 1s;
+   
+}
+.ct_card:hover .card_1{
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 1s;
+}
+
+@media (min-width:300px) and (max-width:480px){
+  .modal_content, .ft-depois{
+    width:300px;
+    height: 300px;
+  }
+  .td_pizzas{
+    justify-content: center;
+  } 
+
+}
+@media (max-width:480px){
+  
+  
+}
